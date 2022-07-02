@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Website Sơn</title>
-    <link rel="stylesheet" href="./css/TrangChu.css">
+    <link rel="stylesheet" href="./css/Style.css">
 </head>
 <body>
     <header>
@@ -25,7 +25,21 @@
                 <li><a href="">Khác</a></li>
             </ul>
             <li><a href="">Bảng màu</a></li>
+            <ul class="sub-menu2">
+                <li><a href="">Bảng màu sơn lót chống kiềm</a></li>
+                <li><a href="">Bảng màu sơn nội thất</a></li>
+                <li><a href="">Bảng màu sơn ngoại thất</a></li>
+                <li><a href="">Bảng màu sơn epoxy và sơn dầu</a></li>
+            </ul>
             <li><a href="">Tư vấn</a></li>
+            <ul class="sub-menu3">
+                <li><a href="">Sơn nhà trọn gói</a></li>
+                <li><a href="">Phòng khách</a></li>
+                <li><a href="">Phòng ngủ</a></li>
+                <li><a href="">Phòng ăn</a></li>
+                <li><a href="">Công trình phụ</a></li>
+                <li><a href="">Phong thủy</a></li>
+            </ul>
             <li><a href="">Báo giá</a></li>
             <li><a href="">Liên hệ</a></li>
         </div>
@@ -36,4 +50,41 @@
             <li><a class="fa fa-shopping-bag" href=""></a></li>
         </div>
     </header>
+    <section id="Slider">
+        <div class="aspect-ratio-169">
+            <img src="./GiaoDien/Images/test.JPG">
+            <img src="./GiaoDien/Images/test2.JPG">
+        </div>
+        <div class="dot-container">
+            <div class="dot active"></div>
+            <div class="dot"></div>
+        </div>
+    </section>
 </body>
+<script>
+    const imgPosition = document.querySelectorAll(".aspect-ratio-169 img")
+    const imgContainer = document.querySelector('.aspect-ratio-169')
+    const dotItem = document.querySelectorAll(".dot")
+    let imgNuber = imgPosition.length
+    let index = 0
+    imgPosition.forEach(function(image,index) {
+        image.style.left = index*100 + "%" 
+        dotItem[index].addEventListener("click",function(){
+            Slider(index)
+        })
+    })
+function imgSlide (){
+    index++;
+    console.log(index)
+    if(index>=imgNuber) {index=0}
+   Slider(index)
+}
+function Slider(index){
+    imgContainer.style.left="-" + index*100 + "%"
+    const dotActive = document.querySelector('.active')
+    dotActive.classList.remove("active")
+    dotItem[index].classList.add("active")
+}
+setInterval(imgSlide,5000)
+</script>
+</html>
