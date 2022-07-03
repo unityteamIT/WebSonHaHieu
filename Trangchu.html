@@ -5,60 +5,84 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Website Sơn</title>
-    <link rel="stylesheet" href="./css/Style.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.1.1-web/css/all.min.css">
 </head>
 <body>
     <header>
         <div class="logo">
-            <img src="./GiaoDien/Images/logo.png" alt="">
+            <img src="./assets/images/logo.png" alt="">
         </div>
         <div class="menu">
             <li><a href="">Trang chủ</a></li>
             <li><a href="">Giới thiệu</a></li>
-            <li><a href="">Phân loại</a></li>
-            <ul class="sub-menu">
-                <li><a href="">Sơn lót chống kiềm</a></li>
-                <li><a href="">Sơn nội thất</a></li>
-                <li><a href="">Sơn ngoại thất</a></li>
-                <li><a href="">Sơn epoxy và sơn dầu</a></li>
-                <li><a href="">Bột bả</a></li>
-                <li><a href="">Khác</a></li>
-            </ul>
-            <li><a href="">Bảng màu</a></li>
-            <ul class="sub-menu2">
-                <li><a href="">Bảng màu sơn lót chống kiềm</a></li>
-                <li><a href="">Bảng màu sơn nội thất</a></li>
-                <li><a href="">Bảng màu sơn ngoại thất</a></li>
-                <li><a href="">Bảng màu sơn epoxy và sơn dầu</a></li>
-            </ul>
-            <li><a href="">Tư vấn</a></li>
-            <ul class="sub-menu3">
-                <li><a href="">Sơn nhà trọn gói</a></li>
-                <li><a href="">Phòng khách</a></li>
-                <li><a href="">Phòng ngủ</a></li>
-                <li><a href="">Phòng ăn</a></li>
-                <li><a href="">Công trình phụ</a></li>
-                <li><a href="">Phong thủy</a></li>
-            </ul>
+            <li class="parent-PL">
+                <a  href="">Phân loại</a>
+                <ul class="sub-menu">
+                    <li><a href="">Sơn lót chống kiềm</a></li>
+                    <li><a href="">Sơn nội thất</a></li>
+                    <li><a href="">Sơn ngoại thất</a></li>
+                    <li><a href="">Sơn epoxy và sơn dầu</a></li>
+                    <li><a href="">Bột bả</a></li>
+                    <li><a href="">Khác</a></li>
+                </ul>
+            </li>
+            <li class="parent-BM">
+                <a href="">Bảng màu</a>
+                <ul class="sub-menu2">
+                    <li><a href="">Bảng màu sơn lót chống kiềm</a></li>
+                    <li><a href="">Bảng màu sơn nội thất</a></li>
+                    <li><a href="">Bảng màu sơn ngoại thất</a></li>
+                    <li><a href="">Bảng màu sơn epoxy và sơn dầu</a></li>
+                </ul>
+            </li>
+            <li class="parent-TV">
+                <a href="">Tư vấn</a>
+                <ul class="sub-menu3">
+                    <li><a href="">Sơn nhà trọn gói</a></li>
+                    <li><a href="">Phòng khách</a></li>
+                    <li><a href="">Phòng ngủ</a></li>
+                    <li><a href="">Phòng ăn</a></li>
+                    <li><a href="">Công trình phụ</a></li>
+                    <li><a href="">Phong thủy</a></li>
+                </ul>
+            </li>
             <li><a href="">Báo giá</a></li>
             <li><a href="">Liên hệ</a></li>
         </div>
         <div class="others">
-            <li><input placeholder="Tìm kiếm" type="text"><i class="fas fa-search"></i></li>
-            <li><a class="fa fa-paw" href=""></a></li>
-            <li><a class="fa fa-user" href=""></a></li>
-            <li><a class="fa fa-shopping-bag" href=""></a></li>
+            <li><input class="txtSearch" placeholder="Tìm kiếm" type="text"><i class="fas fa-search"></i></li>
+            <li>
+                <a href="" class="btnLogin">
+                    <i class="fa-solid fa-user"></i>
+                </a>
+            </li>
+            <li>
+                <a class="btnLogin" href="">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </a>
+            </li>
         </div>
     </header>
     <section id="Slider">
         <div class="aspect-ratio-169">
-            <img src="./GiaoDien/Images/test.JPG">
-            <img src="./GiaoDien/Images/test2.JPG">
+            <img src="./assets/images/test.JPG">
+            <img src="./assets/images/test2.JPG">
         </div>
         <div class="dot-container">
             <div class="dot active"></div>
             <div class="dot"></div>
         </div>
+    </section>
+    <section class="info-container">
+        <p>Chuyên phân phối các loại sơn nội thất, ngoại thất</p>
+        <p>Tư vấn thi công các công trình sơn, chống thấm</p>
+        <div class="info">
+           <img src="./assets/images/logo.png" alt="">
+        </div>
+        <p>Nhận tư vấn miễn phí</p>
+        <input type="text" placeholder="Nhập email của bạn...">
+
     </section>
 </body>
 <script>
