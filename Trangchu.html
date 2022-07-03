@@ -50,6 +50,7 @@
             <li><a href="">Báo giá</a></li>
             <li><a href="">Liên hệ</a></li>
         </div>
+<!-----------------------------------------------Icon------------------------------------------>
         <div class="others">
             <li><input class="txtSearch" placeholder="Tìm kiếm" type="text"><i class="fas fa-search"></i></li>
             <li>
@@ -64,6 +65,7 @@
             </li>
         </div>
     </header>
+<!-----------------------------------------------Slide------------------------------------------>
     <section id="Slider">
         <div class="aspect-ratio-169">
             <img src="./assets/images/test.JPG">
@@ -74,6 +76,7 @@
             <div class="dot"></div>
         </div>
     </section>
+<!-----------------------------------------------Info------------------------------------------>
     <section class="info-container">
         <p>Chuyên phân phối các loại sơn nội thất, ngoại thất</p>
         <p>Tư vấn thi công các công trình sơn, chống thấm</p>
@@ -84,8 +87,44 @@
         <input type="text" placeholder="Nhập email của bạn...">
 
     </section>
+<!-----------------------------------------------Footer------------------------------------------>
+<div class="footer-top">
+    <li><a href="">Liên hệ</a></li>
+    <li><a href="">Khuyến mãi</a></li>
+    <li><a href="">Giới thiệu</a></li>
+    <li>
+        <a href="" class="fa-brands fa-facebook"></a>
+        <a href="" class="fa-solid fa-envelope"></a>
+        <a href="" class="fa-solid fa-phone"></a>
+    </li>
+</div>
+<div class="footer-center">
+    <p>
+        Đại lý sơn Hà Hiệu<br>
+        Đường Thanh Niên, thôn Trấn Hưng, xã Gia Trung, huyện Gia Viễn, tỉnh Ninh Bình<br>
+        Số điện thoại đặt hàng: <b>0961739454</b>
+    </p>
+</div>
+<div class="footer-bottom">
+    ©HaHieuColor All rights reserved
+</div>
 </body>
+<!-----------------------------------------------SlideCode------------------------------------------>
 <script>
+    const header = document.querySelector("header")
+    window.addEventListener("scroll",function(){
+        x=window.pageYOffset
+        if(x>0){
+            header.classList.add("sticky")
+        }
+        else{
+            header.classList.remove("sticky")
+        }
+    })
+
+
+
+
     const imgPosition = document.querySelectorAll(".aspect-ratio-169 img")
     const imgContainer = document.querySelector('.aspect-ratio-169')
     const dotItem = document.querySelectorAll(".dot")

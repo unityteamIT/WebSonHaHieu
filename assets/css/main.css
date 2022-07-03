@@ -16,6 +16,18 @@ header{
     padding: 12px 50px;
     height: 70px;
     align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    background: rgba(255, 255, 255, 0.3);
+}
+header.sticky{
+    background: rgba(255, 255, 255, 1);
+}
+header:hover{
+    background: rgba(255, 255, 255, 1);
 }
 .logo{
     flex:1 ;
@@ -124,11 +136,14 @@ header{
     width: 100%;
     border: none;
     border-bottom: 1px solid #333;
+    background: transparent;
+    outline: none;
 }
 .others > li:first-child i{
     position: absolute;
     right: 10px;
 }
+/*---------------------------Slide----------------------*/
 #Slider {
     padding-bottom: 30px;
     border-bottom: 2px solid #000;
@@ -183,6 +198,7 @@ header{
     background-color: #ccc;
     border-radius: 50%;
 }
+/*---------------------------Info----------------------*/
 .info-container{
     text-align: center;
     align-items: center;
@@ -192,7 +208,7 @@ header{
     line-height: 20px;
     letter-spacing: 1px;
     font-size: 17px;
-    color: red;
+    color: rebeccapurple;
     font-weight: bold;
 }
 .info{
@@ -200,6 +216,7 @@ header{
 }
 .info img{
     height: 50px;
+    cursor: pointer;
 }
 .info-container input{
     margin-top: 50px;
@@ -209,4 +226,44 @@ header{
     width: 400px;
     text-align: center;
     outline: none;
+}
+/*---------------------------Footer----------------------*/
+footer {
+    text-align: center;
+}
+.footer-top{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    height: 70px;
+}
+.footer-top li{
+    padding: 0 12px;
+    position: relative;
+}
+.footer-top li::after{
+    content: "";
+    display: block;
+    width: 1px;
+    height: 80%;
+    background: #ccc;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.footer-top li:last-child::after{
+    display: none;
+}
+.footer-top li:last-child a{
+    margin-right: 12px;
+}
+.footer-center{
+    text-align: center;
+}
+.footer-bottom{
+    margin: 20px 0;
+    text-align: center;
 }
