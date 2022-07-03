@@ -65,86 +65,48 @@
             </li>
         </div>
     </header>
-<!-----------------------------------------------Slide------------------------------------------>
-    <section id="Slider">
-        <div class="aspect-ratio-169">
-            <img src="./assets/images/test.JPG">
-            <img src="./assets/images/test2.JPG">
-            <img src="./assets/images/test3.JPG">
+<!-----------------------------------------------DanhmucSP------------------------------------------>
+<section class="catergory">
+    <div class="container">
+        <div class="catergory-top">
+            <p>Trang chủ</p> <span>&#10230</span> <p>Phân loại</p> <span>&#10230</span> <p>Sơn lót chống kiềm</p>
         </div>
-        <div class="dot-container">
-            <div class="dot active"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-        </div>
-    </section>
+    </div>
+
+</section>
+
+
+
 <!-----------------------------------------------Info------------------------------------------>
-    <section class="info-container">
-        <p>Chuyên phân phối các loại sơn nội thất, ngoại thất</p>
-        <p>Tư vấn thi công các công trình sơn, chống thấm</p>
-        <div class="info">
-           <img src="./assets/images/logo.png" alt="">
-        </div>
-        <p>Nhận tư vấn miễn phí</p>
-        <input type="text" placeholder="Nhập email của bạn...">
-    </section>
+<section class="info-container">
+    <p>Chuyên phân phối các loại sơn nội thất, ngoại thất</p>
+    <p>Tư vấn thi công các công trình sơn, chống thấm</p>
+    <div class="info">
+       <img src="./assets/images/logo.png" alt="">
+    </div>
+    <p>Nhận tư vấn miễn phí</p>
+    <input type="text" placeholder="Nhập email của bạn...">
+
+</section>
 <!-----------------------------------------------Footer------------------------------------------>
 <div class="footer-top">
-    <li><a href="">Liên hệ</a></li>
-    <li><a href="">Khuyến mãi</a></li>
-    <li><a href="">Giới thiệu</a></li>
-    <li>
-        <a href="" class="fa-brands fa-facebook"></a>
-        <a href="" class="fa-solid fa-envelope"></a>
-        <a href="" class="fa-solid fa-phone"></a>
-    </li>
+<li><a href="">Liên hệ</a></li>
+<li><a href="">Khuyến mãi</a></li>
+<li><a href="">Giới thiệu</a></li>
+<li>
+    <a href="" class="fa-brands fa-facebook"></a>
+    <a href="" class="fa-solid fa-envelope"></a>
+    <a href="" class="fa-solid fa-phone"></a>
+</li>
 </div>
 <div class="footer-center">
-    <p>
-        Đại lý sơn Hà Hiệu<br>
-        Đường Thanh Niên, thôn Trấn Hưng, xã Gia Trung, huyện Gia Viễn, tỉnh Ninh Bình<br>
-        Số điện thoại đặt hàng: <b>0961739454</b>
-    </p>
+<p>
+    Đại lý sơn Hà Hiệu<br>
+    Đường Thanh Niên, thôn Trấn Hưng, xã Gia Trung, huyện Gia Viễn, tỉnh Ninh Bình<br>
+    Số điện thoại đặt hàng: <b>0961739454</b>
+</p>
 </div>
 <div class="footer-bottom">
-    ©HaHieuColor All rights reserved
+©HaHieuColor All rights reserved
 </div>
 </body>
-<!-----------------------------------------------JavaScript------------------------------------------>
-<script>
-    const header = document.querySelector("header")
-    window.addEventListener("scroll",function(){
-        x=window.pageYOffset
-        if(x>0){
-            header.classList.add("sticky")
-        }
-        else{
-            header.classList.remove("sticky")
-        }
-    })
-    const imgPosition = document.querySelectorAll(".aspect-ratio-169 img")
-    const imgContainer = document.querySelector('.aspect-ratio-169')
-    const dotItem = document.querySelectorAll(".dot")
-    let imgNuber = imgPosition.length
-    let index = 0
-    imgPosition.forEach(function(image,index) {
-        image.style.left = index*100 + "%" 
-        dotItem[index].addEventListener("click",function(){
-            Slider(index)
-        })
-    })
-function imgSlide (){
-    index++;
-    console.log(index)
-    if(index>=imgNuber) {index=0}
-   Slider(index)
-}
-function Slider(index){
-    imgContainer.style.left="-" + index*100 + "%"
-    const dotActive = document.querySelector('.active')
-    dotActive.classList.remove("active")
-    dotItem[index].classList.add("active")
-}
-setInterval(imgSlide,5000)
-</script>
-</html>
