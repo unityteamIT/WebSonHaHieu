@@ -288,21 +288,22 @@ footer {
 /*---------------------------Catergory----------------------*/
 
 .cartegory{
-    padding: 100px 0 0;
+    padding: 100px 0;
 }
 .cartegory-top{
-    margin-bottom: 50px;
+    margin-bottom: 40px;
+    margin-right: 20px;
 }
 .cartegory-top p{
     font-family: Arial, Helvetica, sans-serif;
     margin: 0 12px ;
-    font-size: 13px;
+    font-size: 12px;
 }
 .cartegory-left{
-    width: 20%;
+   width: 10%;
 }
 .cartegory-right{
-    width: 80%;
+    width: 90%;
 }
 .cartegory-right-top-item:first-child{
     flex: 2;
@@ -373,10 +374,10 @@ footer {
 .cartegory-left ul li ul li{
     padding-left: 10px;
 }
-.cartegory-left-li ul{
+.close{
     display: none;
 }
-.cartegory-left-li block ul{
+.open{
     display: block;
 }
 /*---------------------Product---------------------*/
@@ -532,7 +533,7 @@ footer {
 }
 .product-content-right-bottom-content-title-item p{
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
+    font-size: 14px;
     color: rebeccapurple;
 }
 .product-content-right-bottom-content{
@@ -540,8 +541,7 @@ footer {
 }
 .product-content-right-bottom-content p{
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px;
-    color: rebeccapurple;
+    font-size: 13px;
 }
 .product-content-right-bottom-content-thuonghieu{
     display: none;

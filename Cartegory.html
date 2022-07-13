@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Website Sơn</title>
     <link rel="stylesheet" href="./assets/css/main.css">
-    <link rel="stylesheet" href="./assets/js/script.js">
     <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.1.1-web/css/all.min.css">
 </head>
 <body>
@@ -77,8 +76,8 @@
         <div class="row">
             <div class="cartegory-left">
                 <ul>
-                    <li class="cartegory-left-li"><a href="">Phân loại</a>
-                        <ul>
+                    <li class="cartegory-left-li" onclick="showSubCategory('PLCategory')"><a>Phân loại</a>
+                        <ul id="PLCategory" class="close">
                             <li><a href="">Sơn lót chống kiềm</a></li>
                             <li><a href="">Sơn nội thất</a></li>
                             <li><a href="">Sơn ngoại thất</a></li>
@@ -87,16 +86,16 @@
                             <li><a href="">Khác</a></li>
                         </ul>
                     </li>
-                    <li class="cartegory-left-li"><a href="">Bảng màu</a>
-                        <ul>
+                    <li class="cartegory-left-li" onclick="showSubCategory('BMCategory')"><a>Bảng màu</a>
+                        <ul id="BMCategory" class="close">
                             <li><a href="">Bảng màu sơn lót chống kiềm</a></li>
                             <li><a href="">Bảng màu sơn nội thất</a></li>
                             <li><a href="">Bảng màu sơn ngoại thất</a></li>
                             <li><a href="">Bảng màu sơn epoxy và sơn dầu</a></li>
                         </ul>
                     </li>
-                    <li class="cartegory-left-li"><a href="">Tư vấn</a>
-                        <ul>
+                    <li class="cartegory-left-li" onclick="showSubCategory('TVCategory')"><a>Tư vấn</a>
+                        <ul id="TVCategory" class="close">
                             <li><a href="">Sơn nhà trọn gói</a></li>
                             <li><a href="">Phòng khách</a></li>
                             <li><a href="">Phòng ngủ</a></li>
@@ -206,4 +205,5 @@
 ©HaHieuColor All rights reserved
 </div>
 </body>
+<script src="./assets/js/cartegory.js"></script>
 </html>
