@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Sơn</title>
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.1.1-web/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="./assets/images/logo.png" alt="">
+        </div>
+        <div class="menu">
+            <li><a href="">Trang chủ</a></li>
+            <li><a href="">Giới thiệu</a></li>
+            <li class="parent-PL">
+                <a  href="">Phân loại</a>
+                <ul class="sub-menu">
+                    <li><a href="">Sơn lót chống kiềm</a></li>
+                    <li><a href="">Sơn nội thất</a></li>
+                    <li><a href="">Sơn ngoại thất</a></li>
+                    <li><a href="">Sơn epoxy và sơn dầu</a></li>
+                    <li><a href="">Bột bả</a></li>
+                    <li><a href="">Khác</a></li>
+                </ul>
+            </li>
+            <li class="parent-BM">
+                <a href="">Bảng màu</a>
+                <ul class="sub-menu2">
+                    <li><a href="">Bảng màu sơn lót chống kiềm</a></li>
+                    <li><a href="">Bảng màu sơn nội thất</a></li>
+                    <li><a href="">Bảng màu sơn ngoại thất</a></li>
+                    <li><a href="">Bảng màu sơn epoxy và sơn dầu</a></li>
+                </ul>
+            </li>
+            <li class="parent-TV">
+                <a href="">Tư vấn</a>
+                <ul class="sub-menu3">
+                    <li><a href="">Sơn nhà trọn gói</a></li>
+                    <li><a href="">Phòng khách</a></li>
+                    <li><a href="">Phòng ngủ</a></li>
+                    <li><a href="">Phòng ăn</a></li>
+                    <li><a href="">Công trình phụ</a></li>
+                    <li><a href="">Phong thủy</a></li>
+                </ul>
+            </li>
+            <li><a href="">Báo giá</a></li>
+            <li><a href="">Liên hệ</a></li>
+        </div>
+<!-----------------------------------------------Icon------------------------------------------>
+        <div class="others">
+            <li><input class="txtSearch" placeholder="Tìm kiếm" type="text"><i class="fas fa-search"></i></li>
+            <li>
+                <a href="" class="btnLogin">
+                    <i class="fa-solid fa-user"></i>
+                </a>
+            </li>
+            <li>
+                <a class="btnLogin" href="">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </a>
+            </li>
+        </div>
+    </header>
+<!-----------------------------------------------Cart------------------------------------------>
+<section class="cart">
+    <div class="container">
+        <div class="cart-top-wrap">
+            <div class="cart-top">
+                <div class="cart-top-cart cart-top-item">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+                <div class="cart-top-adress cart-top-item">
+                    <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div class="cart-top-payment cart-top-item">
+                    <i class="fa-solid fa-wallet"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="cart-content">
+            <div class="cart-content-left">
+                <table>
+                    <tr>
+                        <th>Sản phẩn</th>
+                        <th>Tên sản phẩm</th>
+                        <th>Màu</th>
+                        <th>Dung tích</th>
+                        <th>Số lượng</th>
+                        <th>Thành tiền</th>
+                        <th>Xóa</th>
+                    </tr>
+                    <tr>
+                        <td><img src="./assets/images/Sp1.png" alt=""></td>
+                        <td><p>Sơn chống thấm ABCXYZ</p></td>
+                        <td><img src="" alt=""></td>
+                        <td><p>5l</p></td>
+                        <td><input type="number" value="1" min="1"></td>
+                        <td><p>1.200.000<sup>vnđ</sup></p></td>
+                        <td><span>X</span></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./assets/images/sp2.jpg" alt=""></td>
+                        <td><p>Sơn chống thấm ABCXYZ</p></td>
+                        <td><img src="" alt=""></td>
+                        <td><p>5l</p></td>
+                        <td><input type="number" value="1" min="1"></td>
+                        <td><p>1.200.000<sup>vnđ</sup></p></td>
+                        <td><span>X</span></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="cart-content-right">
+                <table>
+                    <tr>
+                        <th colspan="2">Tổng tiền giỏ hàng</th>
+                    </tr>
+                    <tr>
+                        <td>Tổng sản phẩm</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>Tổng tiền hàng</td>
+                        <td><p>1.200.000 <sup>vnđ</sup></p></td>
+                    </tr>
+                    <tr>
+                        <td>Tạm tính</td>
+                        <td><p style="color: black; font-weight: bold;">1.200.000 <sup>vnđ</sup></p></td>
+                    </tr>
+                </table>
+                <div class="cart-content-right-text">
+                    <p>Freeship cho đơn hàng từ 2.000.000đ trở lên</p>
+                    <p style="color: red; font-weight: bold;">Mua thêm <span style="font-size: 18px;">800.000đ</span> để được freeship</p>
+                </div>
+                <div class="cart-content-right-button">
+                    <button>Tiếp tục mua sắm</button>
+                    <button>Thanh toán</button>
+                </div>
+                <div class="cart-content-right-dangnhap">
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-----------------------------------------------Info------------------------------------------>
+<section class="info-container">
+    <p>Chuyên phân phối các loại sơn nội thất, ngoại thất</p>
+    <p>Tư vấn thi công các công trình sơn, chống thấm</p>
+    <div class="info">
+       <img src="./assets/images/logo.png" alt="">
+    </div>
+    <p>Nhận tư vấn miễn phí</p>
+    <input type="text" placeholder="Nhập email của bạn...">
+</section>
+<!-----------------------------------------------Footer------------------------------------------>
+<div class="footer-top">
+<li><a href="">Liên hệ</a></li>
+<li><a href="">Khuyến mãi</a></li>
+<li><a href="">Giới thiệu</a></li>
+<li>
+    <a href="" class="fa-brands fa-facebook"></a>
+    <a href="" class="fa-solid fa-envelope"></a>
+    <a href="" class="fa-solid fa-phone"></a>
+</li>
+</div>
+<div class="footer-center">
+<p>
+    Đại lý sơn Hà Hiệu<br>
+    Đường Thanh Niên, thôn Trấn Hưng, xã Gia Trung, huyện Gia Viễn, tỉnh Ninh Bình<br>
+    Số điện thoại đặt hàng: <b>0961739454</b>
+</p>
+</div>
+<div class="footer-bottom">
+©HaHieuColor All rights reserved
+</div>
+</body>
+<script src="./assets/js/slider.js"></script>
+</html>    

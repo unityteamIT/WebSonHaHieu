@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Sơn</title>
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.1.1-web/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="./assets/images/logo.png" alt="">
+        </div>
+        <div class="menu">
+            <li><a href="">Trang chủ</a></li>
+            <li><a href="">Giới thiệu</a></li>
+            <li class="parent-PL">
+                <a  href="">Phân loại</a>
+                <ul class="sub-menu">
+                    <li><a href="">Sơn lót chống kiềm</a></li>
+                    <li><a href="">Sơn nội thất</a></li>
+                    <li><a href="">Sơn ngoại thất</a></li>
+                    <li><a href="">Sơn epoxy và sơn dầu</a></li>
+                    <li><a href="">Bột bả</a></li>
+                    <li><a href="">Khác</a></li>
+                </ul>
+            </li>
+            <li class="parent-BM">
+                <a href="">Bảng màu</a>
+                <ul class="sub-menu2">
+                    <li><a href="">Bảng màu sơn lót chống kiềm</a></li>
+                    <li><a href="">Bảng màu sơn nội thất</a></li>
+                    <li><a href="">Bảng màu sơn ngoại thất</a></li>
+                    <li><a href="">Bảng màu sơn epoxy và sơn dầu</a></li>
+                </ul>
+            </li>
+            <li class="parent-TV">
+                <a href="">Tư vấn</a>
+                <ul class="sub-menu3">
+                    <li><a href="">Sơn nhà trọn gói</a></li>
+                    <li><a href="">Phòng khách</a></li>
+                    <li><a href="">Phòng ngủ</a></li>
+                    <li><a href="">Phòng ăn</a></li>
+                    <li><a href="">Công trình phụ</a></li>
+                    <li><a href="">Phong thủy</a></li>
+                </ul>
+            </li>
+            <li><a href="">Báo giá</a></li>
+            <li><a href="">Liên hệ</a></li>
+        </div>
+<!-----------------------------------------------Icon------------------------------------------>
+        <div class="others">
+            <li><input class="txtSearch" placeholder="Tìm kiếm" type="text"><i class="fas fa-search"></i></li>
+            <li>
+                <a href="" class="btnLogin">
+                    <i class="fa-solid fa-user"></i>
+                </a>
+            </li>
+            <li>
+                <a class="btnLogin" href="">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </a>
+            </li>
+        </div>
+    </header>
+<!-----------------------------------------------Delivery------------------------------------------>
+<section class="delivery">
+    <div class="container">
+        <div class="delivery-top-wrap">
+            <div class="delivery-top">
+                <div class="delivery-top-delivery delivery-top-item">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+                <div class="delivery-top-adress delivery-top-item">
+                    <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div class="delivery-top-payment delivery-top-item">
+                    <i class="fa-solid fa-wallet"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="delivery-content row">
+            <div class="delivery-content-left">
+                <p>Vui lòng chọn địa chỉ giao hàng</p>
+                <div class="delivery-content-left-dangnhap row">
+                    <i class="fa-solid fa-right-to-bracket"></i>
+                    <p>Đăng nhập nếu bạn đã có tài khoản</p>
+                </div>
+                <div class="delivery-content-left-khachle row">
+                    <input checked name="loaikhach" type="radio">
+                    <p><span style="font-weight:bold;">Khách lẻ</span>(Nếu bạn không muốn lưu lại thông tin)</p>
+                </div>
+                <div class="delivery-content-left-dangki row">
+                    <input checked name="loaikhach" type="radio">
+                    <p><span style="font-weight:bold;">Đăng kí</span>(Tạo mới tài khoản với thông tin bên dưới)</p>
+                </div>
+                <div class="delivery-content-left-input-top row">
+                    <div class="delivery-content-left-input-top-item">
+                        <label for="">Họ tên <span style="color: red;">*</span></label>
+                        <input type="text">
+                    </div>
+                    <div class="delivery-content-left-input-top-item">
+                        <label for="">Điện thoại <span style="color: red;">*</span></label>
+                        <input type="text">
+                    </div>
+                    <div class="delivery-content-left-input-top-item">
+                        <label for="">Tỉnh/Tp <span style="color: red;">*</span></label>
+                        <input type="text">
+                    </div>
+                    <div class="delivery-content-left-input-top-item">
+                        <label for="">Quận/Huyện <span style="color: red;">*</span></label>
+                        <input type="text">
+                    </div>
+                </div>
+                <div class="delivery-content-left-input-bottom">
+                    <label for="">Địa chỉ <span style="color: red;">*</span></label>
+                    <input type="text">
+                </div>
+                <div class="delivery-content-left-button row">
+                    <a href=""><span>&#171;</span><p>Quay lại giỏ hàng</p></a>
+                    <button style="font-weight:bold;">THANH TOÁN VÀ GIAO HÀNG</button>
+                </div>
+            </div>
+            <div class="delivery-content-right">
+                <table>
+                    <tr>
+                        <th>Tên sản phẩm</th>
+                        <th>Giảm giá</th>
+                        <th>Số lượng</th>
+                        <th>Thành tiền</th>
+                    </tr>
+                    <tr>
+                        <td>Sơn nội thất cao cấp</td>
+                        <td>-30%</td>
+                        <td>1</td>
+                        <td>1.200.000<sup>vnđ</sup></td>
+                    </tr>
+                    <tr>
+                        <td>Sơn lót kiềm ngoại thất</td>
+                        <td>-30%</td>
+                        <td>1</td>
+                        <td>1.200.000<sup>vnđ</sup></td>
+                    </tr>
+                    <tr>
+                        <td style="font-weight:bold;" colspan="3">Tổng</td>
+                        <td style="font-weight:bold;">2.400.000<sup>vnđ</sup></td>
+                    </tr>
+                    <tr>
+                        <td style="font-weight:bold;" colspan="3">VAT</td>
+                        <td style="font-weight:bold;">30.000<sup>vnđ</sup></td>
+                    </tr>
+                    <tr>
+                        <td style="font-weight:bold;" colspan="3">Tổng tiền hàng</td>
+                        <td style="font-weight:bold;">2.430.000<sup>vnđ</sup></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-----------------------------------------------Info------------------------------------------>
+<section class="info-container">
+    <p>Chuyên phân phối các loại sơn nội thất, ngoại thất</p>
+    <p>Tư vấn thi công các công trình sơn, chống thấm</p>
+    <div class="info">
+       <img src="./assets/images/logo.png" alt="">
+    </div>
+    <p>Nhận tư vấn miễn phí</p>
+    <input type="text" placeholder="Nhập email của bạn...">
+</section>
+<!-----------------------------------------------Footer------------------------------------------>
+<div class="footer-top">
+<li><a href="">Liên hệ</a></li>
+<li><a href="">Khuyến mãi</a></li>
+<li><a href="">Giới thiệu</a></li>
+<li>
+    <a href="" class="fa-brands fa-facebook"></a>
+    <a href="" class="fa-solid fa-envelope"></a>
+    <a href="" class="fa-solid fa-phone"></a>
+</li>
+</div>
+<div class="footer-center">
+<p>
+    Đại lý sơn Hà Hiệu<br>
+    Đường Thanh Niên, thôn Trấn Hưng, xã Gia Trung, huyện Gia Viễn, tỉnh Ninh Bình<br>
+    Số điện thoại đặt hàng: <b>0961739454</b>
+</p>
+</div>
+<div class="footer-bottom">
+©HaHieuColor All rights reserved
+</div>
+</body>
+<script src="./assets/js/slider.js"></script>
+</html>    
